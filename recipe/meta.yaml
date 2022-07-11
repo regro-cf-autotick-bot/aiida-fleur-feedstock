@@ -19,7 +19,7 @@ outputs:
       noarch: python
       entry_points:
         - aiida-fleur = aiida_fleur.cmdline:cmd_root
-      script: {{ PYTHON }} -m pip install . -vv
+      script: 'python -m pip install . --no-deps --ignore-installed -vvv '
     requirements:
       host:
         - pip
