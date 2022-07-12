@@ -1,9 +1,10 @@
 {% set name = "aiida-fleur" %}
 {% set version = "1.3.1" %}
-{% set build = 2 %}
+{% set build = 3 %}
+{% set name_code = name + ".code" %}
 
 package:
-  name: {{ name|lower }}-meta
+  name: {{ name }}.meta
   version: {{ version }}
 
 source:
@@ -12,9 +13,15 @@ source:
 
 build:
   number: {{ build }}
+  noarch: python
+
+requirements:
+  run:
+  - {{ pin_subpackage(name, exact=True) }}
+  - {{ pin_subpackage(name_code, exact=True) }}
 
 outputs:
-  - name:  {{ name|lower }}
+  - name:  {{ name }}
     build:
       noarch: python
       entry_points:
@@ -37,6 +44,8 @@ outputs:
         - python >=3.7
         - sqlalchemy <1.4
         - sympy
+      run_constrained:
+        - {{ pin_subpackage(name_code, exact=True) }}
     test:
       imports:
         - aiida_fleur
@@ -45,16 +54,15 @@ outputs:
       requires:
         - pip
 
-  - name: {{ name|lower }}.code
+  - name: {{ name_code }}
     build:
-      noarch: python
+      noarch: generic
     requirements:
       run:
-        - {{ pin_subpackage(name|lower, exact=True) }}
         - fleur >=1,<7
     test:
-      imports:
-        - aiida_fleur
+      commands:
+        - which fleur_MPI
 
 about:
   home: https://github.com/JuDFTteam/aiida-fleur
