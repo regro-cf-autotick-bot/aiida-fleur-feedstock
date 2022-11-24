@@ -1,5 +1,5 @@
-About aiida-fleur
-=================
+About aiida-fleur.meta
+======================
 
 Home: https://github.com/JuDFTteam/aiida-fleur
 
@@ -28,27 +28,29 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-aiida--fleur-green.svg)](https://anaconda.org/conda-forge/aiida-fleur) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/aiida-fleur.svg)](https://anaconda.org/conda-forge/aiida-fleur) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/aiida-fleur.svg)](https://anaconda.org/conda-forge/aiida-fleur) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/aiida-fleur.svg)](https://anaconda.org/conda-forge/aiida-fleur) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-aiida--fleur.code-green.svg)](https://anaconda.org/conda-forge/aiida-fleur.code) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/aiida-fleur.code.svg)](https://anaconda.org/conda-forge/aiida-fleur.code) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/aiida-fleur.code.svg)](https://anaconda.org/conda-forge/aiida-fleur.code) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/aiida-fleur.code.svg)](https://anaconda.org/conda-forge/aiida-fleur.code) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-aiida--fleur.meta-green.svg)](https://anaconda.org/conda-forge/aiida-fleur.meta) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/aiida-fleur.meta.svg)](https://anaconda.org/conda-forge/aiida-fleur.meta) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/aiida-fleur.meta.svg)](https://anaconda.org/conda-forge/aiida-fleur.meta) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/aiida-fleur.meta.svg)](https://anaconda.org/conda-forge/aiida-fleur.meta) |
 
-Installing aiida-fleur
-======================
+Installing aiida-fleur.meta
+===========================
 
-Installing `aiida-fleur` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `aiida-fleur.meta` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `aiida-fleur` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `aiida-fleur, aiida-fleur.code, aiida-fleur.meta` can be installed with `conda`:
 
 ```
-conda install aiida-fleur
+conda install aiida-fleur aiida-fleur.code aiida-fleur.meta
 ```
 
 or with `mamba`:
 
 ```
-mamba install aiida-fleur
+mamba install aiida-fleur aiida-fleur.code aiida-fleur.meta
 ```
 
 It is possible to list all of the versions of `aiida-fleur` available on your platform with `conda`:
@@ -118,17 +120,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating aiida-fleur-feedstock
-==============================
+Updating aiida-fleur.meta-feedstock
+===================================
 
-If you would like to improve the aiida-fleur recipe or build a new
+If you would like to improve the aiida-fleur.meta recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/aiida-fleur-feedstock are
+Note that all branches in the conda-forge/aiida-fleur.meta-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -144,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@janssenhenning](https://github.com/janssenhenning/)
 
