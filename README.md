@@ -1,11 +1,11 @@
-About aiida-fleur.meta
-======================
+About aiida-fleur.meta-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiida-fleur-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/JuDFTteam/aiida-fleur
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiida-fleur-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python FLEUR simulation package containing an AiiDA Plugin for running the FLEUR-code and its input generator. Plus some workflows and utility
 
